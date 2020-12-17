@@ -14,13 +14,26 @@ class Actividad
         $this->descripcion = $descripcion;
         $this->fecha = $fecha;
         $this->lugar = $lugar;
-  
+    }
+    public function getId()
+    {
+        return $this->id;
     }
 
 
+    public function getDescripcion()
+    {
+        return $this->descripcion;
+    }
 
 
+    public function getFecha()
+    {
+        return $this->fecha;
+    }
 
-
-    
+    public function getLugar()
+    {
+        return $this->lugar;
+    }
 }
