@@ -76,4 +76,15 @@ class Montanya extends Actividad
         self::$monitor;
         $this->cuota = $cuota;
     }
+    public function getCuota()
+    {
+        return $this->cuota;
+    }
+
+
+    public function getMonitor()
+    {
+        return $this->monitor;
+    }
+
 }
