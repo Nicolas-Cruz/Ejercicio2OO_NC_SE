@@ -70,4 +70,37 @@ class Montanya extends Actividad
 {
     private static $monitor = " Juana Lukin";
     private $cuota;
+    function __construct($descripcion, $id, $lugar, $fecha, $monitor, $cuota)
+    {
+        parent::__construct($descripcion, $id, $lugar, $fecha);
+        self::$monitor;
+        $this->cuota = $cuota;
+    }
+    public function getCuota()
+    {
+        return $this->cuota;
+    }
+
+
+    public function getMonitor()
+    {
+        return $this->monitor;
+    }
+
+    public function setCuota($cuota)
+    {
+        $this->cuota = $cuota;
+    }
+
+    public function setMonitor($monitor)
+    {
+        $this->monitor = $monitor;
+    }
+
+    function mostrar()
+    {
+        echo parent::mostrar();
+        echo " y la realiza " . montanya::$monitor;
+        echo " que cobra a la hora: " . ($this->cuota) . " €" . "<br/>";
+    }
 }
