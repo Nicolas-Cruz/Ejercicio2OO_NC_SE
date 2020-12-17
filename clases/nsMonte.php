@@ -57,4 +57,12 @@ class Actividad
     {
         $this->lugar = $lugar;
     }
+
+    function mostrar()
+    {
+        echo "La actividad " . ($this->descripcion);
+        echo " " . ($this->id);
+        echo " comenzará en: " . ($this->lugar);
+        echo " el: " . ($this->fecha) . "<br />";
+    }
 }
