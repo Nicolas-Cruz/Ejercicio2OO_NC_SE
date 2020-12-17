@@ -90,7 +90,6 @@ class Montanya extends Actividad
     public function setCuota($cuota)
     {
         $this->cuota = $cuota;
-        
     }
 
     public function setMonitor($monitor)
@@ -98,7 +97,10 @@ class Montanya extends Actividad
         $this->monitor = $monitor;
     }
 
-
-    
-
+    function mostrar()
+    {
+        echo parent::mostrar();
+        echo " y la realiza " . montanya::$monitor;
+        echo " que cobra a la hora: " . ($this->cuota) . " €" . "<br/>";
+    }
 }
