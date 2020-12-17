@@ -66,3 +66,8 @@ class Actividad
         echo " el: " . ($this->fecha) . "<br />";
     }
 }
+class Montanya extends Actividad
+{
+    private static $monitor = " Juana Lukin";
+    private $cuota;
+}
