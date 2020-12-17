@@ -70,4 +70,10 @@ class Montanya extends Actividad
 {
     private static $monitor = " Juana Lukin";
     private $cuota;
+    function __construct($descripcion, $id, $lugar, $fecha, $monitor, $cuota)
+    {
+        parent::__construct($descripcion, $id, $lugar, $fecha);
+        self::$monitor;
+        $this->cuota = $cuota;
+    }
 }
