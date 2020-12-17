@@ -8,5 +8,19 @@ class Actividad
     private $fecha;
     private $lugar;
 
+    function __construct($descripcion, $id, $lugar, $fecha)
+    {
+        $this->id = $id;
+        $this->descripcion = $descripcion;
+        $this->fecha = $fecha;
+        $this->lugar = $lugar;
+  
+    }
 
+
+
+
+
+
+    
 }
