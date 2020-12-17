@@ -36,4 +36,25 @@ class Actividad
     {
         return $this->lugar;
     }
+
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+
+    public function setDescripcion($descripcion)
+    {
+        $this->descripcion = $descripcion;
+    }
+
+    public function setFecha($fecha)
+    {
+        $this->fecha = $fecha;
+    }
+
+    public function setLugar($lugar)
+    {
+        $this->lugar = $lugar;
+    }
 }
